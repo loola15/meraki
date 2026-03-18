@@ -1,0 +1,19 @@
+/* footer*/
+
+@use"./variables" as*;
+
+footer {
+    background-color: $rosa-claro;
+    text-align: center;
+    padding: 7px 0;
+    letter-spacing: 2px;
+   
+
+    .instagram {
+        width: 60px;
+        position: fixed;
+        right: 20px;
+        bottom: 0;
+        z-index: 900;
+    }
+}

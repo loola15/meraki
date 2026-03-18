@@ -1,0 +1,45 @@
+@use"./variables" as*;
+
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+/*  font-family: "Sour Gummy", sans-serif; */
+
+/*reset*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Sour Gummy", sans-serif;
+
+}
+
+p {
+    color: $azul-oscuro;
+    font-size: 1.5rem;
+}
+
+h1 {
+    color: $azul-oscuro;
+    text-shadow: 4px 2px 0px rgba(29, 65, 157, 0.6);
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 30px;
+}
+
+h2 {
+    color: $rosa-claro;
+    text-shadow: 4px 2px 0px rgba(230, 93, 152, 0.6);
+    font-size: 1, 5rem;
+}
+
+h3 {
+    color:$azul-claro;
+    text-shadow: 4px 2px 8px rgba(29, 65, 157, 0.6);
+}
+
+h4 {
+    color: $azul-oscuro;
+    text-transform: uppercase;
+}

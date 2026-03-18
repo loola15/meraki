@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+/*paleta de colores*/
+/*extend*/
+.serv, .serv1, .serv2, .serv3, .serv4, .serv5, .serv6 {
+  border: 3px solid rgb(29, 65, 157);
+  border-radius: 24px 24px 24px 24px;
+  margin: 1 1 10px;
+  letter-spacing: 1px;
+  padding: 10px;
+}
+.serv h3, .serv1 h3, .serv2 h3, .serv3 h3, .serv4 h3, .serv5 h3, .serv6 h3 {
+  text-align: center;
+}
+.serv h4, .serv1 h4, .serv2 h4, .serv3 h4, .serv4 h4, .serv5 h4, .serv6 h4 {
+  text-align: center;
+}
+.serv ul, .serv1 ul, .serv2 ul, .serv3 ul, .serv4 ul, .serv5 ul, .serv6 ul {
+  list-style: none;
+  text-align: center;
+}
+.serv li, .serv1 li, .serv2 li, .serv3 li, .serv4 li, .serv5 li, .serv6 li {
+  color: rgb(28, 28, 122);
+}
+
+/*  font-family: "Sour Gummy", sans-serif; */
+/*reset*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Sour Gummy", sans-serif;
+}
+
+p {
+  color: rgb(28, 28, 122);
+  font-size: 1.5rem;
+}
+
+h1 {
+  color: rgb(28, 28, 122);
+  text-shadow: 4px 2px 0px rgba(29, 65, 157, 0.6);
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 30px;
+}
+
+h2 {
+  color: rgb(230, 93, 152);
+  text-shadow: 4px 2px 0px rgba(230, 93, 152, 0.6);
+  font-size: 1, 5rem;
+}
+
+h3 {
+  color: rgb(29, 65, 157);
+  text-shadow: 4px 2px 8px rgba(29, 65, 157, 0.6);
+}
+
+h4 {
+  color: rgb(28, 28, 122);
+  text-transform: uppercase;
+}
+
+/*header*/
+header {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  background-color: rgb(230, 93, 152);
+}
+header .logo {
+  width: 130px;
+  height: auto;
+  margin: 10px;
+}
+header nav {
+  font-size: 1rem;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  height: 100%;
+  margin-right: 10px;
+}
+header nav ul li {
+  color: rgb(28, 28, 122);
+}
+header nav ul li a {
+  text-decoration: none;
+  font-size: large;
+  color: rgb(28, 28, 122);
+}
+
+/*main index*/
+.contenedor-grid {
+  display: grid;
+  grid-template-areas: "titulo-grid titulo-grid titulo-grid" "subtitulo-grid subtitulo-grid subtitulo-grid" "titulo-serv titulo-serv titulo-serv" "serv1 serv2 serv3" "serv4 serv5 serv6";
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  justify-content: stretch;
+  justify-items: stretch;
+  align-items: stretch;
+  text-align: justify;
+  margin-bottom: 64px;
+  gap: 20px;
+}
+.contenedor-grid .titulo-grid {
+  grid-area: titulo-grid;
+  text-align: center;
+}
+.contenedor-grid .subtitulo-grid {
+  grid-area: subtitulo-grid;
+  text-align: center;
+}
+.contenedor-grid .titulo-serv {
+  grid-area: titulo-serv;
+  margin-left: 20px;
+}
+
+.serv1 {
+  grid-area: serv1;
+}
+
+.serv2 {
+  grid-area: serv2;
+}
+
+.serv3 {
+  grid-area: serv3;
+}
+
+.serv4 {
+  grid-area: serv4;
+}
+
+.serv5 {
+  grid-area: serv5;
+}
+
+.serv6 {
+  grid-area: serv6;
+}
+
+/*main proyectos*/
+.contenedor-grid2 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 0 40px;
+  grid-template-areas: "titulo-proy titulo-proy" "texto-proyectos carrousel";
+}
+.contenedor-grid2 .titulo-proy {
+  grid-area: titulo-proy;
+  text-align: center;
+}
+.contenedor-grid2 .texto-proyectos {
+  grid-area: texto-proyectos;
+  text-align: center;
+  padding: 120px;
+}
+.contenedor-grid2 .carrouselproyectos {
+  grid-area: carrousel;
+  margin-left: 0;
+}
+
+/*contacto*/
+.mb-3 {
+  max-width: 1000px;
+  margin: 40px;
+}
+.mb-3 button.btn-primary {
+  background-color: rgb(230, 93, 152);
+  border: none;
+  font-weight: 600;
+}
+.mb-3 button.btn-primary:hover {
+  background-color: rgb(190, 65, 120);
+}
+
+.iconos-contacto {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 25px;
+  justify-content: flex-start;
+  margin: 100px;
+}
+.iconos-contacto .icono {
+  width: 100px;
+}
+
+/* footer*/
+footer {
+  background-color: rgb(230, 93, 152);
+  text-align: center;
+  padding: 7px 0;
+  letter-spacing: 2px;
+}
+footer .instagram {
+  width: 60px;
+  position: fixed;
+  right: 20px;
+  bottom: 0;
+  z-index: 900;
+}
+
+/* media queries*/
+/* celulares/mobile */
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header nav {
+    width: 90%;
+  }
+  header ul {
+    margin-right: 0px;
+  }
+  .contenedor-grid {
+    grid-template-areas: "titulo-grid" "subtitulo-grid" "titulo-serv" "serv1 " "serv2" "serv3" " serv4" "serv5" " serv6";
+    grid-template-columns: 100%;
+    margin: 22px;
+  }
+  .contenedor-grid2 {
+    grid-template-areas: "titulo-proy" "texto-proyectos" "carrousel";
+    grid-template-columns: 100%;
+    grid-template-rows: 90px 800px 200px;
+  }
+  p {
+    font-size: 1rem;
+  }
+  footer {
+    width: 100%;
+  }
+  footer .instagram {
+    display: none;
+  }
+}
+/*tablet*/
+
+/*# sourceMappingURL=estilos.css.map */
