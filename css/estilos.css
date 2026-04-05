@@ -112,6 +112,7 @@ header nav ul li a {
   align-items: stretch;
   text-align: justify;
   margin-bottom: 64px;
+  padding-inline: 24px;
   gap: 20px;
 }
 .contenedor-grid .titulo-grid {
@@ -124,7 +125,6 @@ header nav ul li a {
 }
 .contenedor-grid .titulo-serv {
   grid-area: titulo-serv;
-  margin-left: 20px;
 }
 
 .serv1 {
@@ -228,25 +228,44 @@ footer .instagram {
     margin-right: 0px;
   }
   .contenedor-grid {
-    grid-template-areas: "titulo-grid" "subtitulo-grid" "titulo-serv" "serv1 " "serv2" "serv3" " serv4" "serv5" " serv6";
+    grid-template-areas: "titulo-grid" "subtitulo-grid" "titulo-serv" "serv1 " "serv2" "serv3" "serv4" "serv5" "serv6";
     grid-template-columns: 100%;
     margin: 22px;
   }
+  .contenedor-grid h1 {
+    font-size: 1.7rem;
+  }
+  .contenedor-grid h2 {
+    display: none;
+  }
+  /*proyectos reales*/
   .contenedor-grid2 {
     grid-template-areas: "titulo-proy" "texto-proyectos" "carrousel";
     grid-template-columns: 100%;
-    grid-template-rows: 90px 800px 200px;
+    padding: 0;
   }
-  p {
-    font-size: 1rem;
+  .contenedor-grid2 h1 {
+    font-size: 1.8rem;
   }
-  footer {
-    width: 100%;
+  .contenedor-grid2 .texto-proyectos {
+    padding: 24px 16px;
   }
-  footer .instagram {
-    display: none;
+  .contenedor-grid2 .texto-proyectos p {
+    text-align: center;
+    line-height: 1.6;
+    max-width: 100%;
+  }
+  .contenedor-grid2 .carrousel {
+    margin-bottom: 40px;
   }
 }
+footer {
+  width: 100%;
+}
+footer .instagram {
+  display: none;
+}
+
 /*tablet*/
 
 /*# sourceMappingURL=estilos.css.map */

@@ -29,15 +29,25 @@
             "serv1 "
             "serv2"
             "serv3"
-            " serv4"
+            "serv4"
             "serv5"
-            " serv6";
+            "serv6";
 
         grid-template-columns: 100%;
         margin: 22px;
 
+        h1 {
+            font-size: 1.7rem;
+        }
+
+        h2 {
+            display: none;
+        }
+
 
     }
+
+    /*proyectos reales*/
 
     .contenedor-grid2 {
         grid-template-areas:
@@ -46,23 +56,48 @@
             "carrousel";
 
         grid-template-columns: 100%;
+        padding: 0;
 
-        grid-template-rows: 90px 800px 200px;
-    }
 
-    p {
-        font-size: 1rem;
+        h1 {
+            font-size: 1.8rem;
+        }
 
-    }
+        .texto-proyectos {
+            padding: 24px 16px;
+        }
 
-    footer {
-        width: 100%;
+        .texto-proyectos p {
+            text-align: center;
+            line-height: 1.6;
+            max-width: 100%;
+        }
 
-        .instagram {
-            display: none;
+        .carrousel {
+            margin-bottom: 40px;
+
         }
     }
+
 }
+
+
+
+
+
+
+
+
+
+
+footer {
+    width: 100%;
+
+    .instagram {
+        display: none;
+    }
+}
+
 
 
 /*tablet*/

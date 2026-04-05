@@ -18,10 +18,12 @@
     justify-content: stretch;
     justify-items: stretch;
     align-items: stretch;
-    text-align:justify;
+    text-align: justify;
     margin-bottom: 64px;
+    padding-inline: 24px;
 
     gap: 20px;
+
     .titulo-grid {
         grid-area: titulo-grid;
         text-align: center;
@@ -36,14 +38,14 @@
 
     .titulo-serv {
         grid-area: titulo-serv;
-        margin-left: 20px;
+      
     }
-    
+
 
 
 }
 
-.serv1{
+.serv1 {
     @extend .serv;
     grid-area: serv1;
 
@@ -87,24 +89,25 @@
     grid-template-areas:
         "titulo-proy titulo-proy"
         "texto-proyectos carrousel";
-        .titulo-proy {
-    grid-area: titulo-proy;
-    text-align: center;
 
-}
+    .titulo-proy {
+        grid-area: titulo-proy;
+        text-align: center;
 
-.texto-proyectos {
-    grid-area: texto-proyectos;
-    text-align: center;
-    padding: 120px;
+    }
+
+    .texto-proyectos {
+        grid-area: texto-proyectos;
+        text-align: center;
+        padding: 120px;
 
 
-}
+    }
 
-.carrouselproyectos {
-    grid-area: carrousel;
-    margin-left: 0;
-}
+    .carrouselproyectos {
+        grid-area: carrousel;
+        margin-left: 0;
+    }
 }
 
 
@@ -115,15 +118,17 @@
     max-width: 1000px;
     margin: 40px;
 
-button.btn-primary {
-    background-color: $rosa-claro;
-    border: none;
-    font-weight: 600;
+    button.btn-primary {
+        background-color: $rosa-claro;
+        border: none;
+        font-weight: 600;
+    }
+
+    button.btn-primary:hover {
+        background-color: $rosa-oscuro;
+    }
 }
-button.btn-primary:hover {
-    background-color: $rosa-oscuro;
-}
-}
+
 .iconos-contacto {
     display: flex;
     flex-direction: row;
@@ -131,11 +136,9 @@ button.btn-primary:hover {
     gap: 25px;
     justify-content: flex-start;
     margin: 100px;
-.icono {
-    width: 100px;
-}
+
+    .icono {
+        width: 100px;
+    }
 
 }
-
-
-
