@@ -33,18 +33,26 @@ h2 {
     color: $rosa-claro;
     text-shadow: 4px 2px 0px rgba(230, 93, 152, 0.6);
     font-family: 'Poppins', sans-serif;
-    font-size: 1, 5rem;
-  
+    font-size: 2rem;
+
 }
 
 h3 {
-    color:$azul-claro;
+    color: $azul-claro;
     font-family: 'Poppins', sans-serif;
     text-shadow: 4px 2px 8px rgba(29, 65, 157, 0.6);
+    font-size: 1.8rem;
+    text-align: center;
+    
+
 }
 
 h4 {
-    color: $azul-oscuro;
+    color: $rosa-claro;
+    opacity: 0.85;
+    font-size: 1.2rem;
+   text-align: center;
+   text-justify: inter-word;
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
 }

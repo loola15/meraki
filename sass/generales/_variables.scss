@@ -10,19 +10,37 @@
  .serv {
 
 
-    margin: 1 1 10px;
+    margin: 10px;
     letter-spacing: 1px;
     padding: 10px;
     background: #fff;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(28, 28, 122, 0.08);
 
-    
 
+    p {
+
+       font-size: 1rem;
+       line-height: 1.5;
+       color: #555;
+       text-align: center;
+
+    }
 
     h3 {
        text-align: center;
+       font-size: 2.1rem;
+       font-weight: 600;
+       letter-spacing: 0.5px;
+
+       margin: 12px;
+       letter-spacing: 1px;
+
     }
+
+
+
 
     h4 {
        text-align: center;
@@ -31,10 +49,14 @@
     ul {
        list-style: none;
        text-align: center;
+       margin-top: auto;
     }
 
     li {
-       color: $azul-oscuro
+       color: $azul-oscuro;
+       font-size: 1rem;
+       margin-bottom: 6px;
+
     }
 
 

@@ -22,7 +22,8 @@
     margin-bottom: 64px;
     padding-inline: 24px;
 
-    gap: 20px;
+    gap: 30px;
+    row-gap: 32px;
 
     .titulo-grid {
         grid-area: titulo-grid;
@@ -38,6 +39,7 @@
 
     .titulo-serv {
         grid-area: titulo-serv;
+        background-color: #f7e8e8;
 
     }
 
