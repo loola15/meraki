@@ -2,11 +2,12 @@
 /*paleta de colores*/
 /*extend*/
 .serv, .serv1, .serv2, .serv3, .serv4, .serv5, .serv6 {
-  border: 3px solid rgb(29, 65, 157);
-  border-radius: 24px 24px 24px 24px;
   margin: 1 1 10px;
   letter-spacing: 1px;
   padding: 10px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
 }
 .serv h3, .serv1 h3, .serv2 h3, .serv3 h3, .serv4 h3, .serv5 h3, .serv6 h3 {
   text-align: center;
@@ -65,6 +66,11 @@ h4 {
   color: rgb(28, 28, 122);
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
+}
+
+span {
+  color: rgb(28, 28, 122);
+  font-size: 1.1rem;
 }
 
 /*header*/
@@ -173,29 +179,34 @@ header nav ul li a {
 }
 
 /*contacto*/
-.mb-3 {
-  max-width: 1000px;
-  margin: 40px;
+.mb-2 {
+  width: 50%;
+  margin: 70px auto;
+  background: #fff;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
 }
-.mb-3 button.btn-primary {
+.mb-2 button.btn-primary {
   background-color: rgb(230, 93, 152);
   border: none;
   font-weight: 600;
 }
-.mb-3 button.btn-primary:hover {
+.mb-2 button.btn-primary:hover {
   background-color: rgb(190, 65, 120);
 }
 
 .iconos-contacto {
   display: flex;
-  flex-direction: row;
   align-items: center;
   gap: 25px;
-  justify-content: flex-start;
-  margin: 100px;
+  justify-content: space-evenly;
+  padding: 5px;
+  text-align: center;
 }
-.iconos-contacto .icono {
-  width: 100px;
+
+.icono {
+  width: 50px;
 }
 
 /* footer*/
@@ -206,7 +217,7 @@ footer {
   letter-spacing: 2px;
 }
 footer .instagram {
-  width: 60px;
+  width: 65px;
   position: fixed;
   right: 20px;
   bottom: 0;
@@ -227,6 +238,7 @@ footer .instagram {
   header ul {
     margin-right: 0px;
   }
+  /*home*/
   .contenedor-grid {
     grid-template-areas: "titulo-grid" "subtitulo-grid" "titulo-serv" "serv1 " "serv2" "serv3" "serv4" "serv5" "serv6";
     grid-template-columns: 100%;
@@ -259,6 +271,7 @@ footer .instagram {
     margin-bottom: 40px;
   }
 }
+/*contacto*/
 footer {
   width: 100%;
 }

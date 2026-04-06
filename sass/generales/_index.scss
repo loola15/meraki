@@ -38,7 +38,7 @@
 
     .titulo-serv {
         grid-area: titulo-serv;
-      
+
     }
 
 
@@ -114,9 +114,15 @@
 /*contacto*/
 
 
-.mb-3 {
-    max-width: 1000px;
-    margin: 40px;
+.mb-2 {
+
+    width: 50%;
+    margin: 70px auto;
+
+    background: #fff;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
 
     button.btn-primary {
         background-color: $rosa-claro;
@@ -131,14 +137,18 @@
 
 .iconos-contacto {
     display: flex;
-    flex-direction: row;
     align-items: center;
     gap: 25px;
-    justify-content: flex-start;
-    margin: 100px;
+    justify-content: space-evenly;
+   
+    padding: 5px;
+    text-align: center;
 
-    .icono {
-        width: 100px;
-    }
+
+}
+
+
+.icono {
+    width: 50px;
 
 }

@@ -34,6 +34,7 @@ h2 {
     text-shadow: 4px 2px 0px rgba(230, 93, 152, 0.6);
     font-family: 'Poppins', sans-serif;
     font-size: 1, 5rem;
+  
 }
 
 h3 {
@@ -46,4 +47,9 @@ h4 {
     color: $azul-oscuro;
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
+}
+
+span {
+    color: $azul-oscuro;
+    font-size: 1.1rem;
 }
