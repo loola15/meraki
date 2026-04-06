@@ -238,14 +238,19 @@ footer .instagram {
   header ul {
     margin-right: 0px;
   }
+  footer .iconos-contacto span {
+    display: none;
+  }
+  h1 {
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 24px;
+  }
   /*home*/
   .contenedor-grid {
     grid-template-areas: "titulo-grid" "subtitulo-grid" "titulo-serv" "serv1 " "serv2" "serv3" "serv4" "serv5" "serv6";
     grid-template-columns: 100%;
     margin: 22px;
-  }
-  .contenedor-grid h1 {
-    font-size: 1.7rem;
   }
   .contenedor-grid h2 {
     display: none;
@@ -255,9 +260,6 @@ footer .instagram {
     grid-template-areas: "titulo-proy" "texto-proyectos" "carrousel";
     grid-template-columns: 100%;
     padding: 0;
-  }
-  .contenedor-grid2 h1 {
-    font-size: 1.8rem;
   }
   .contenedor-grid2 .texto-proyectos {
     padding: 24px 16px;
@@ -272,11 +274,10 @@ footer .instagram {
   }
 }
 /*contacto*/
-footer {
-  width: 100%;
-}
-footer .instagram {
-  display: none;
+.mb-2 {
+  width: 80%;
+  margin: 70px auto;
+  padding: 32px;
 }
 
 /*tablet*/
