@@ -302,14 +302,13 @@ footer span {
   .contenedor-grid2 .carrousel {
     margin-bottom: 40px;
   }
+  /*contacto*/
+  .mb-2 {
+    width: 95%;
+    margin: 24px auto;
+    padding: 20px;
+  }
 }
-/*contacto*/
-.mb-2 {
-  width: 80%;
-  margin: 70px auto;
-  padding: 32px;
-}
-
 /*tablet*/
 
 /*# sourceMappingURL=estilos.css.map */
