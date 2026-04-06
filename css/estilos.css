@@ -18,7 +18,7 @@
 }
 .serv h3, .serv1 h3, .serv2 h3, .serv3 h3, .serv4 h3, .serv5 h3, .serv6 h3 {
   text-align: center;
-  font-size: 2.1rem;
+  font-size: 1.8rem;
   font-weight: 600;
   letter-spacing: 0.5px;
   margin: 12px;
@@ -48,6 +48,14 @@
 
 body {
   font-family: "Inter", system-ui, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
 }
 
 p {
@@ -185,6 +193,7 @@ header nav ul li a {
   display: grid;
   grid-template-columns: 50% 50%;
   padding: 0 40px;
+  margin-bottom: 64px;
   grid-template-areas: "titulo-proy titulo-proy" "texto-proyectos carrousel";
 }
 .contenedor-grid2 .titulo-proy {
@@ -199,12 +208,13 @@ header nav ul li a {
 .contenedor-grid2 .carrouselproyectos {
   grid-area: carrousel;
   margin-left: 0;
+  margin-top: 50px;
 }
 
 /*contacto*/
 .mb-2 {
   width: 50%;
-  margin: 70px auto;
+  margin: auto;
   background: #fff;
   padding: 32px;
   border-radius: 12px;
@@ -238,13 +248,10 @@ footer {
   text-align: center;
   padding: 7px 0;
   letter-spacing: 2px;
+  margin-top: auto;
 }
-footer .instagram {
-  width: 65px;
-  position: fixed;
-  right: 20px;
-  bottom: 0;
-  z-index: 900;
+footer span {
+  margin: 0;
 }
 
 /* media queries*/

@@ -86,6 +86,7 @@
     display: grid;
     grid-template-columns: 50% 50%;
     padding: 0 40px;
+    margin-bottom: 64px;
 
 
     grid-template-areas:
@@ -109,6 +110,8 @@
     .carrouselproyectos {
         grid-area: carrousel;
         margin-left: 0;
+        margin-top: 50px;
+        
     }
 }
 
@@ -119,7 +122,7 @@
 .mb-2 {
 
     width: 50%;
-    margin: 70px auto;
+    margin:  auto;
 
     background: #fff;
     padding: 32px;
