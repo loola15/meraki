@@ -73,7 +73,6 @@
 
 
 
-
         .texto-proyectos {
             padding: 24px 16px;
         }
@@ -93,24 +92,94 @@
     /*contacto*/
     .mb-2 {
 
-        width: 95%;
-        margin: 24px auto;
+        width: 100%;
+        margin-top: 45px;
+        margin-bottom: 0px;
 
         padding: 20px;
 
     }
-
+   
 }
-
-
-
-
-
-
 
 
 
 
 /*tablet*/
 
-@media (min-widht: 481px) and (max-widht:770px) {}
+@media (min-width: 481px) and (max-width:770px) {
+
+   header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        nav {
+            width: 90%;
+
+        }
+
+        ul {
+            margin-right: 0px;
+        }
+
+    }
+
+    footer {
+        .iconos-contacto span {
+            display: none;
+        }
+    }
+/*home*/
+    .contenedor-grid {
+        grid-template-areas:
+            "titulo-grid"
+            "subtitulo-grid"
+            "titulo-serv"
+            "serv1 "
+            "serv2"
+            "serv3"
+            "serv4"
+            "serv5"
+            "serv6";
+
+        grid-template-columns: 100%;
+        margin: 22px;
+
+
+
+        h2 {
+            display: none;
+        }
+
+
+    }
+    /*proyectos reales*/
+
+    .contenedor-grid2 {
+        grid-template-areas:
+            "titulo-proy"
+            "texto-proyectos"
+            "carrousel";
+
+        grid-template-columns: 100%;
+        padding: 0;
+
+
+
+        .texto-proyectos {
+            padding: 24px 16px;
+        }
+
+        .texto-proyectos p {
+            text-align: center;
+            line-height: 1.6;
+            max-width: 100%;
+        }
+
+        .carrousel {
+            margin-bottom: 40px;
+
+        }
+    }
+}

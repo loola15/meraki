@@ -31,6 +31,7 @@
   list-style: none;
   text-align: center;
   margin-top: auto;
+  padding-left: 0;
 }
 .serv li, .serv1 li, .serv2 li, .serv3 li, .serv4 li, .serv5 li, .serv6 li {
   color: rgb(28, 28, 122);
@@ -77,6 +78,7 @@ h2 {
   text-shadow: 4px 2px 0px rgba(230, 93, 152, 0.6);
   font-family: "Poppins", sans-serif;
   font-size: 2rem;
+  text-align: center;
 }
 
 h3 {
@@ -208,7 +210,6 @@ header nav ul li a {
 .contenedor-grid2 .carrouselproyectos {
   grid-area: carrousel;
   margin-left: 0;
-  margin-top: 50px;
 }
 
 /*contacto*/
@@ -217,7 +218,7 @@ header nav ul li a {
   margin: auto;
   background: #fff;
   padding: 32px;
-  border-radius: 12px;
+  border-radius: 16px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
 }
 .mb-2 button.btn-primary {
@@ -304,11 +305,54 @@ footer span {
   }
   /*contacto*/
   .mb-2 {
-    width: 95%;
-    margin: 24px auto;
+    width: 100%;
+    margin-top: 45px;
+    margin-bottom: 0px;
     padding: 20px;
   }
 }
 /*tablet*/
+@media (min-width: 481px) and (max-width: 770px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header nav {
+    width: 90%;
+  }
+  header ul {
+    margin-right: 0px;
+  }
+  footer .iconos-contacto span {
+    display: none;
+  }
+  /*home*/
+  .contenedor-grid {
+    grid-template-areas: "titulo-grid" "subtitulo-grid" "titulo-serv" "serv1 " "serv2" "serv3" "serv4" "serv5" "serv6";
+    grid-template-columns: 100%;
+    margin: 22px;
+  }
+  .contenedor-grid h2 {
+    display: none;
+  }
+  /*proyectos reales*/
+  .contenedor-grid2 {
+    grid-template-areas: "titulo-proy" "texto-proyectos" "carrousel";
+    grid-template-columns: 100%;
+    padding: 0;
+  }
+  .contenedor-grid2 .texto-proyectos {
+    padding: 24px 16px;
+  }
+  .contenedor-grid2 .texto-proyectos p {
+    text-align: center;
+    line-height: 1.6;
+    max-width: 100%;
+  }
+  .contenedor-grid2 .carrousel {
+    margin-bottom: 40px;
+  }
+}
 
 /*# sourceMappingURL=estilos.css.map */
