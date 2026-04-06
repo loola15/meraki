@@ -29,9 +29,10 @@ p {
 
 h1 {
     color: $azul-oscuro;
-    text-shadow: 4px 2px 0px rgba(29, 65, 157, 0.6);
+    text-shadow: 4px 2px 8px rgba(29, 65, 157, 0.6);
     font-size: 3rem;
     font-family: 'Poppins', sans-serif;
+    font-weight: bold;
     text-align: center;
     margin-top: 30px;
 }
@@ -40,7 +41,7 @@ h2 {
     color: $rosa-claro;
     text-shadow: 4px 2px 0px rgba(230, 93, 152, 0.6);
     font-family: 'Poppins', sans-serif;
-    font-size: 2rem;
+    font-size: 2.3rem;
     text-align: center;
 
 }
